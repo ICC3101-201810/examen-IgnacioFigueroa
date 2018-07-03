@@ -34,9 +34,9 @@ namespace PacMan
             this.abajo = false;
             this.izquierda = false;
             this.derecha = false;
-            pacMan = new Rectangle(492, 376, 45, 45);
-            fantasma1 = new Rectangle(random.Next(0, 955), random.Next(0,955), 45, 45);
-            fantasma2 = new Rectangle(random.Next(0, 955), random.Next(0,955), 45, 45);
+            pacMan = new Rectangle(350, 300, 45, 45);
+            fantasma1 = new Rectangle(random.Next(0, 700), random.Next(0,600), 45, 45);
+            fantasma2 = new Rectangle(random.Next(0, 700), random.Next(0,600), 45, 45);
             fruta1 = new Rectangle(0, 0, 45, 45);
             fruta2 = new Rectangle(0, 0, 45, 45);
 
