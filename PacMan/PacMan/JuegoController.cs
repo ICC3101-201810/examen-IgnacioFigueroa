@@ -73,6 +73,7 @@ namespace PacMan
             if (juego.derrota == true)
             {
                 MessageBox.Show("Perdiste");
+                juego.MostrarPuntajes();
             }
         }
 

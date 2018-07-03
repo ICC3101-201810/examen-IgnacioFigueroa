@@ -88,8 +88,13 @@ namespace PacMan
 
         public void MostrarPuntajes()
         {
-            List<Puntaje> puntajesOrdenados = puntajes.OrderBy(x => x.puntaje).ToList();
-            string mostrar = "";
+            List<Puntaje> puntajesOrdenados = new List<Puntaje>();
+            try
+            {
+                puntajesOrdenados = puntajes.OrderBy(x => x.puntaje).ToList();
+            }
+            catch { }
+            string mostrar = "Puntajes: \n";
             foreach(Puntaje p in puntajesOrdenados)
             {
                 mostrar += p.jugador + p.puntaje.ToString() + p.tiempo + "\n";
